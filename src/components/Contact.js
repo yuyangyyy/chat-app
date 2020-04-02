@@ -1,10 +1,10 @@
 import React from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 function Contact(props) {
   return (
     <div className="Contact">
-      <img className="avatar" src={props.src} alt="photo"/>
+      <img className="avatar" src={props.src} />
 
       <div>
         <h1 className="name">{props.name}</h1>
@@ -23,9 +23,9 @@ function Contact(props) {
 }
 
 Contact.propTypes = {
-  name: PropTypes.string, 
+  name: PropTypes.string,
   src: PropTypes.string,
   online: PropTypes.bool
-}
-  
-export default Contact
+};
+
+export default Contact;
